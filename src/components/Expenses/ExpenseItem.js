@@ -5,10 +5,12 @@ import "./ExpenseItem.css";
 
 function ExpenseItem(props) {
   const [title, setTile] = useState(props.title);
+  //let title = props.title;
   console.log("Expense item re-evaluated by React");
 
   const clickHandler = () => {
     setTile("Updated");
+    //title = "Updated";
     console.log(title);
   };
   return (
